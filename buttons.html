@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Buttons</title>
+    <style>
+        .btn-flat {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-flat:hover {
+            background-color: #45aaf2;
+        }
+
+        .btn-gradient {
+            background: linear-gradient(to right, #00fffc, #ff00fd);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-gradient:hover {
+            opacity: 0.8;
+        }
+
+        /* Outline Button */
+        .btn-outline {
+            background-color: transparent;
+            color: #3498db;
+            border: 2px solid #3498db;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-outline:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .btn-rounded {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-rounded:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-icon {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-icon i {
+            margin-right: 5px;
+        }
+
+        .btn-icon:hover {
+            opacity: 0.8;
+        }
+
+
+        .btn-elegant {
+            background-color: #f9f9f9;
+            color: #333;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .btn-elegant:hover {
+            background-color: #f1f1f1;
+            transform: translateY(-2px);
+        }
+
+        .btn-cta {
+            background-color: #FF4B2B;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-cta:hover {
+            background-color: #FF6138;
+            transform: translateY(-2px);
+        }
+
+
+        .btn-artistic {
+            background-color: #FFC107;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .btn-artistic:hover {
+            transform: scale(1.1);
+        }
+
+        .btn-sci-fi {
+            background-color: #3A3A3A;
+            color: #00FFD1;
+            border: none;
+            border-radius: 4px;
+            padding: 12px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-sci-fi:hover {
+            background-color: #00FFD1;
+            color: #3A3A3A;
+        }
+
+
+        .btn-retro {
+            background-color: #FF3A1C;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 12px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-retro:hover {
+            background-color: #FFF;
+            color: #FF3A1C;
+        }
+
+        .btn-vintage {
+            background-color: #FFD700;
+            color: #3A3A3A;
+            border: none;
+            border-radius: 4px;
+            padding: 12px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-vintage:hover {
+            background-color: #3A3A3A;
+            color: #FFD700;
+        }
+
+        .btn-transparent {
+            background-color: transparent;
+            color: #3498db;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-transparent:hover {
+            background-color: rgba(52, 152, 219, 0.1);
+            color: #fff;
+        }
+
+        .btn-pulse {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .btn-glow {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px #3498db;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .btn-glow:hover {
+            box-shadow: 0px 0px 20px #3498db;
+        }
+
+
+        .btn-neon {
+            background-color: #262626;
+            color: #00fffc;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px #00fffc;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .btn-neon:hover {
+            box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.5);
+        }
+
+        .btn-rainbow {
+            background: linear-gradient(to right, #FF6138, #FFBE38, #FEC538, #71EFA3, #61B3FF, #B361FF);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-rainbow:hover {
+            animation: rainbow 2s infinite;
+        }
+
+        @keyframes rainbow {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+
+
+        .btn-harmony {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.935);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-harmony::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: -1;
+        }
+
+        .btn-harmony:hover::before {
+            opacity: 1;
+        }
+
+        .btn-harmony:hover {
+            background-color: #45a049;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .btn-harmony:active {
+            background-color: #3e8e41;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+            transform: translateY(2px);
+        }
+
+        .btn-harmony span {
+            position: relative;
+            z-index: 2;
+        }
+
+        .btn-harmony:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        .btn-harmony:hover:after {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn-flat">Flat Button</button>
+    <button class="btn-gradient">Gradient Button</button>
+    <button class="btn-outline">Outline Button</button>
+    <button class="btn-rounded">Rounded Button</button>
+    <button class="btn-icon"> Like</button>
+    <button class="btn-elegant">Elegant Button</button>
+    <button class="btn-cta">Call to Action</button>
+    <button class="btn-artistic">Artistic Button</button>
+    <button class="btn-sci-fi">Sci-Fi Button</button>
+    <button class="btn-retro">Retro Button</button>
+    <button class="btn-vintage">Vintage Button</button>
+    <button class="btn-transparent">Transparent Button</button>
+    <button class="btn-pulse">Pulse Button</button>
+    <button class="btn-glow">Glow Button</button>
+    <button class="btn-neon">Neon Button</button>
+    <button class="btn-rainbow">Rainbow Button</button>
+    <button class="btn-harmony">Harmony Button</button>
+
+
+</body>
+
+</html>
