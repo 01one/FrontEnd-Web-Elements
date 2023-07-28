@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+
+        .basic-shadow {
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .inset-shadow {
+            box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .colored-shadow {
+            box-shadow: 2px 2px 4px rgba(0, 0, 255, 0.3);
+        }
+
+        .multiple-shadow {
+            box-shadow: 2px 2px 4px rgba(255, 0, 0, 0.3), 4px 4px 6px rgba(0, 255, 0, 0.3);
+        }
+
+        .spread-radius {
+            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .outer-glow {
+            box-shadow: 0 0 20px 10px rgba(0, 0, 255, 0.5);
+        }
+
+        .inner-glow {
+            box-shadow: inset 0 0 20px 10px rgba(0, 255, 0, 0.5);
+        }
+
+        .blur-radius {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .transparency {
+            box-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+        }
+
+        .mixed-shadow {
+            box-shadow: inset 2px 2px 4px rgba(0, 255, 0, 0.3), 4px 4px 6px rgba(0, 0, 255, 0.3), 6px 6px 8px rgba(255, 0, 0, 0.3);
+        }
+
+        .dotted-border {
+            box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .inner-border {
+            box-shadow: inset 0 0 0 4px rgba(255, 0, 0, 0.5);
+        }
+
+        .embossed {
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2) inset, -2px -2px 4px rgba(255, 255, 255, 0.2) inset;
+        }
+
+        .curved-shadow {
+            box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+        }
+
+        .neon-glow {
+            box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+        }
+
+        .three-d-box {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2), 0 0 30px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .glowing-border {
+            box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5) inset;
+        }
+
+        .all-sides-shadow {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .multiple-inset {
+            box-shadow: inset 2px 2px 4px rgba(0, 0, 255, 0.3), inset 6px 6px 8px rgba(0, 255, 0, 0.3);
+        }
+
+        .border-and-shadow {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 0 4px rgba(255, 0, 255, 0.5);
+        }
+
+        .transparent-shadow {
+            box-shadow: 0 0 10px transparent;
+        }
+
+        @keyframes glowing-animation {
+            0% {
+                box-shadow: 0 0 5px 2px rgba(255, 255, 0, 0.7);
+            }
+            50% {
+                box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.7);
+            }
+            100% {
+                box-shadow: 0 0 5px 2px rgba(255, 255, 0, 0.7);
+            }
+        }
+
+        .animated-shadow {
+            animation: glowing-animation 2s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Box Shadow</h1>
+
+    <div class="box basic-shadow"></div>
+    <div class="box inset-shadow"></div>
+    <div class="box colored-shadow"></div>
+    <div class="box multiple-shadow"></div>
+    <div class="box spread-radius"></div>
+    <div class="box outer-glow"></div>
+    <div class="box inner-glow"></div>
+    <div class="box blur-radius"></div>
+    <div class="box transparency"></div>
+    <div class="box mixed-shadow"></div>
+    <div class="box dotted-border"></div>
+    <div class="box inner-border"></div>
+    <div class="box embossed"></div>
+    <div class="box curved-shadow"></div>
+    <div class="box neon-glow"></div>
+    <div class="box three-d-box"></div>
+    <div class="box glowing-border"></div>
+    <div class="box all-sides-shadow"></div>
+    <div class="box multiple-inset"></div>
+    <div class="box border-and-shadow"></div>
+    <div class="box transparent-shadow"></div>
+    <div class="box animated-shadow"></div>
+</body>
+</html>
